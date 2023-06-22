@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task 6</title>
+</head>
+<body>
+    <main class="container">
+        <h2>З клавіатури вводяться вартість товару та кількість одиниць 3
+            товарів. Обчислити вартість кожного товару окремо та загальну
+            вартість. Вивести чек (як у супермаркеті) використовуючи елементи
+            розмітки.</h2>
+
+            <script>
+
+                //З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+//Введення небхідних данних
+let quantityMilk = parseInt(prompt('Введіть кількість молока', '0'))
+let priceMilk = parseFloat(prompt('Введіть ціну молока', '0'))
+
+let quantityBread = parseInt(prompt('Введіть кількість хліба','0'))
+let priceBread = parseFloat(prompt('Введіть ціну хліба', '0'))
+
+let quantitySugar = parseInt(prompt('Введіть кількість цукру','0'))
+let priceSugar = parseFloat(prompt('Введіть ціну цукру', '0'))
+
+
+//Обчислення результату
+
+let totalPriceMilk = quantityMilk * priceMilk
+let totalPriceBread = quantityBread * priceBread
+let totalPriceSugar = quantitySugar * priceSugar
+
+let totalPrice = totalPriceMilk + totalPriceBread + totalPriceSugar
+
+
+//Ввиведення результату
+document.write(`
+<table>
+    <tr>
+        <th>Назва товару</th>
+        <th>Кількість</th>
+        <th>вартість</th>
+    </tr>
+    <tr>
+        <td>Молоко</td>
+        <td>${quantityMilk}</td>
+        <td>${totalPriceMilk} </td>
+    </tr>
+    <tr>
+        <td>Хліб</td>
+        <td>${quantityBread} </td>
+        <td>${totalPriceBread} </td>
+    </tr>
+    <tr>
+        <td>Цукор</td>
+        <td>${quantitySugar} </td>
+        <td>${totalPriceSugar} </td>
+    </tr>
+    <tr>
+        <td>Загальна вартість	</td>
+        <td></td>
+        <td>${totalPrice}</td>
+    </tr>
+
+
+
+`)
+
+
+            </script>
+    </main>
+</body>
+</html>
