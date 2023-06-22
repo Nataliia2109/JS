@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>task 3</title>
+</head>
+<body>
+    <main class="container">
+
+<h2>Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості)</h2>
+
+        <script>
+            //Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+
+            //Введення небхідних данних
+
+            let priceProduct = parseFloat(prompt('Введіть вартість одиниці товару', '0'))
+            let countProduct = parseInt(prompt('Введіть кількість товару', '0'))
+
+
+            //Обчислення результату
+
+            let totalPrice = priceProduct * countProduct
+            const tax = 0.05
+            let taxTotal = totalPrice * tax
+
+            //Ввиведення результату
+
+            document.write(`Загальна вартість товару ${totalPrice} <br>
+            Податок 5% від загальної вартості ${taxTotal}
+            `)
+
+        </script>
+    </main>
+</body>
+</html>
