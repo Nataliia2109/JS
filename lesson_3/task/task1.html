@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>task 1</title>
+</head>
+<body>
+    <main class="container">
+<h2>З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.</h2>
+    <script>
+
+        //З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.
+
+
+    //Позначення велечин
+    //імя першої дитини =nameFirstChild
+    //імя другої дитини=nameSecondChild
+    //кількість цукерок першої дитини =numberFirstChild
+    //кількість цукерок другої дитини =numberSecondChild
+
+
+    //Введення небхідних данних
+const nameFirstChild = prompt('Введіть імя першої дитини')
+const nameSecondChild = prompt('Введіть імя другої дитини')
+const numberFirstChild= parseInt(prompt('Введіть кількість цукерок першої дитини'))
+const numberSecondChild= parseInt(prompt('Введіть кількість цукерок другої дитини'))
+    
+    //Обчислення результату
+
+if (numberFirstChild > numberSecondChild)
+    alert(`Більше цукеров у ${nameFirstChild}`)
+else  
+ if (numberFirstChild < numberSecondChild)
+ alert(`Більше цукеров у ${nameFirstChild}`)
+ else 
+ alert('Цукерок порівну')
+
+
+
+        
+
+   
+
+    
+    </script>
+    </main>
+</body>
+</html>
