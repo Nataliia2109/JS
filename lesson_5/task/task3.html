@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>task 3</title>
+  </head>
+  <body>
+    <main class="container">
+      <h2>
+        Користувач поступово вводить прибуток магазину за кожен день протягом N
+        тижнів. Знайти загальну величину прибутку та вивести величину прибутку
+        протягом кожного окремого тижня.
+      </h2>
+
+      <script>
+        // Користувач поступово вводить прибуток магазину за кожен день протягом N тижнів. Знайти загальну величину прибутку та вивести величину прибутку протягом кожного окремого тижня.
+
+        const weekNumber = parseInt(prompt("Введіть кількість тижнів"));
+        let total = 0;
+        
+
+        for (let week = 1; week <= weekNumber; week++) {
+            let totalWeek = 0;
+          for (let day = 1; day <= 7; day++) {
+            const incomeDay = parseFloat(
+              prompt(`Тиждень №${week}  день № ${day}`)
+            );
+            totalWeek += incomeDay;
+            total += incomeDay;
+          }
+          document.write(`Прибуток за тиждень № ${week} - ${totalWeek}<br>`);
+        }
+        document.write(`Загальна величина прибутку ${total}`);
+      </script>
+    </main>
+  </body>
+</html>

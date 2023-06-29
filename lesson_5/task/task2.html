@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>task 2</title>
+</head>
+<body>
+    <main class="container">
+<h2> Вивести з використанням циклів маркований список з випадковими числами (1-100). Кількість випадкових чисел вводиться користувачем</h2>
+
+        <script>
+
+            // Вивести з використанням циклів маркований список з випадковими числами (1-100). Кількість випадкових чисел вводиться користувачем
+
+            const minValue = 1
+            const maxValue = 100
+            for (let i = 0; i < 4; i++) {
+            let randNumber = minValue + Math.floor(Math.random() * (maxValue- minValue + 1))
+                document.write(`<ul><li>${randNumber}</li></ul> `)
+            }
+
+
+
+        </script>
+    </main>
+    
+</body>
+</html>

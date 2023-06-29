@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task 5</title>
+</head>
+<body>
+    <main class="container">
+        <h2> Вивести таблицю з 3 рядків і 7 стовпців</h2>
+            <script>
+
+                //Вивести таблицю з 3 рядків і 7 стовпців
+
+            const columnNum = 7
+            const rowNum = 3
+
+            document.write(`<table>`)
+            
+                    for (let j = 0; j < rowNum; j++) {
+                        document.write(`<tr>`);
+                       
+                        for (let y = 1; y <= columnNum; y++) {
+                           document.write(`<td>${y} </td>`)
+                            
+                        }
+                    document.write(`</tr>`)    
+                 }
+             
+             document.write(`</table>`)
+
+
+
+
+            </script>
+    </main>
+</body>
+</html>
