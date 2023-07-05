@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Task 5</title>
+</head>
+<body>
+    <main class="container">
+        <h2> Інвестор вклав  тис. грн на 20 років під 20% річних. Визначити за допомогою циклів суму, яку він одержить (без оподаткування).</h2>
+            <script>
+
+                //Інвестор вклав  тис. грн на 20 років під 20% річних. Визначити за допомогою циклів суму, яку він одержить (без оподаткування).
+
+            let sumStart = parseFloat(prompt('Введіть суму вкладу'))
+            const percentProfit = 20
+            let result = sumStart
+
+            for (let i = 0; i < 20; i++) {
+                result = result + (result * percentProfit) / 100  
+            }
+            document.write(`При сумі вкладу ${sumStart}грн, під 20% річних, через 20 років ви отримаете ${result.toFixed()} грн`)
+
+
+
+
+            </script>
+    </main>
+</body>
+</html>

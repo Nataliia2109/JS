@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>task 4</title>
+  </head>
+  <body>
+    <main class="container">
+      <h2>
+       Побудувати ялинку
+      </h2>
+      <script>
+        // Побудувати ялинку
+
+        let result = " ";
+
+        for (let y = 0; y < 3; y++) {
+          for (let j = 1; j <= 7; j++) {
+            let row = "";
+            for (let x = 0; x < j; x++) {
+              row += "o";
+            }
+            result += row + "<br>";
+          }
+        }
+        document.write(`${result}`);
+      </script>
+    </main>
+  </body>
+</html>
